@@ -76,4 +76,8 @@ def main(stdscr):
 		if ord(key) == 27:
 			break
 
-wrapper(main)
+try:
+	wrapper(main)
+except KeyboardInterrupt:
+	print("Ended typing test via keyboard interrupt.")
+	
